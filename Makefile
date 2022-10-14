@@ -12,4 +12,12 @@ watch-fsharp:
 	dotnet watch msbuild 
 
 
+test-fsharp:
+	@printf "\n\e[31mRunning tablecloth-fsharp tests ...\e[0m\n"
+	dotnet restore 
+	dotnet run --project test
+	@printf "\n\e[31mTested!\e[0m\n"
+
+test:
+	@$(MAKE) test-fsharp
 
