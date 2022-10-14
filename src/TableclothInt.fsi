@@ -131,7 +131,7 @@ val multiply: t -> t -> t
     {[(2 * 7) = 14]}
 *)
 
-val (*): t -> t -> t
+val ``( * )``: t -> t -> t
 (** See {!Int.multiply} *)
 
 val divide: by: t -> t -> t
@@ -177,7 +177,7 @@ val power: exponent: t -> ``base``: t -> t
     {[7 ** 3 = 343]}
 *)
 
-val ( ** ): t -> t -> t
+val ``( ** )``: t -> t -> t
 (** See {!Int.power} *)
 
 val negate: t -> t

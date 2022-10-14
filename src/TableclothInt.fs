@@ -26,7 +26,7 @@ let (-) a b = (-) a b
 
 let multiply a b = (*) a b
 
-let (*) a b = multiply a b
+let ``( * )`` a b = multiply a b
 
 let divide by n = n / by
 
@@ -36,7 +36,7 @@ let (/) (a: int) (b: int) = (/) a b
 
 let power (exponent: int) (``base``: int) : int = int (float ``base`` ** float exponent)
 
-let ( ** ) a b = power a b
+let ``( ** )`` a b = power a b
 
 let negate a = (~-) a
 

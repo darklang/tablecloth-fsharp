@@ -195,7 +195,7 @@ val multiply: t -> t -> t
     {[Float.(2.0 * 7.0) = 14.0]}
 *)
 
-val (*): t -> t -> t
+val ``( * )``: t -> t -> t
 (** See {!Float.multiply} *)
 
 val divide: t -> by: t -> t
@@ -225,7 +225,7 @@ val power: exponent: t -> ``base``: t -> t
     {[Float.(7.0 ** 3.0) = 343.0]}
 *)
 
-val ( ** ): t -> t -> t
+val ``( ** )``: t -> t -> t
 (** See {!Float.power} *)
 
 val negate: t -> t
@@ -609,12 +609,12 @@ val atan2: y: t -> x: t -> radians
     See {!Float.round} for what each variant represents.
  *)
 type Direction =
-  | Zero
-  | AwayFromZero
-  | Up
-  | Down
-  | Closest of Direction
-  | ClosestToEven
+    | Zero
+    | AwayFromZero
+    | Up
+    | Down
+    | Closest of Direction
+    | ClosestToEven
 
 
 val round: direction: Direction -> t -> t
