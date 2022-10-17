@@ -63,7 +63,7 @@ let (-) (a: t) (b: t) = (-) a b
 
 let multiply (a: t) (b: t) = a * b
 
-let (*) (a: t) (b: t) = a * b
+let ``( * )`` (a: t) (b: t) = a * b
 
 let divide (n: t) (by: t) = n / by
 
@@ -71,7 +71,7 @@ let (/) (a: t) (b: t) = a / b
 
 let power (exponent: t) (``base``: t) : t = ``base`` ** exponent
 
-let ( ** ) (a: t) (b: t) = a ** b
+let ``( ** )`` (a: t) (b: t) = a ** b
 
 let negate (a: t) = (~-) a
 
