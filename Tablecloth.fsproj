@@ -39,7 +39,7 @@
     <Compile Include="src/TableclothTuple3.fs" />
   </ItemGroup>
   <ItemGroup>  
-    <DotNetCliToolReference Include="dotnet-fantomas" />
+    <DotNetCliToolReference Include="dotnet-fantomas" version="2.7.1" />
   </ItemGroup>
   <Import Project=".paket\Paket.Restore.targets" />
 </Project>
