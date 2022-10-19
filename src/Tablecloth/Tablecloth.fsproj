@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>6.0</LangVersion>
+    <OtherFlags>--warnaserror</OtherFlags>
+    <IsPublishable>false</IsPublishable>
+    <PackageId>TableclothFSharp</PackageId>
+    <Version>0.0.8-alpha1</Version>
+    <Authors>Paul Biggar</Authors>
+    <Company>Darklang</Company>
+    <PackRelease>true</PackRelease>
+    <Description>F# version of Tablecloth - a standard library shim providing the same function names across many languages.</Description>
+    <PackageTags>tablecloth;fsharp;standard-library</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <Compile Include="Bool.fsi" />
+    <Compile Include="Bool.fs" />
+    <Compile Include="Char.fsi" />
+    <Compile Include="Char.fs" />
+    <Compile Include="Int.fsi" />
+    <Compile Include="Int.fs" />
+    <Compile Include="Fun.fsi" />
+    <Compile Include="Fun.fs" />
+    <Compile Include="Float.fsi" />
+    <Compile Include="Float.fs" />
+    <Compile Include="List.fsi" />
+    <Compile Include="List.fs" />
+    <Compile Include="Option.fsi" />
+    <Compile Include="Option.fs" />
+    <Compile Include="Map.fsi" />
+    <Compile Include="Map.fs" />
+    <Compile Include="Array.fsi" />
+    <Compile Include="Array.fs" />
+    <Compile Include="Result.fsi" />
+    <Compile Include="Result.fs" />
+    <Compile Include="Set.fsi" />
+    <Compile Include="Set.fs" />
+    <Compile Include="String.fsi" />
+    <Compile Include="String.fs" />
+    <Compile Include="Tuple2.fsi" />
+    <Compile Include="Tuple2.fs" />
+    <Compile Include="Tuple3.fsi" />
+    <Compile Include="Tuple3.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" />
+  </ItemGroup>
+</Project>

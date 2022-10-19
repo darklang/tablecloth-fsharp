@@ -13,3 +13,5 @@ bin
 paket-files/
 .paket/paket.bootstrapper.exe
 .paket/paket.exe
+
+.fake
