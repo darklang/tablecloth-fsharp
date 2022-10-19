@@ -5,11 +5,11 @@ jobs:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
       - checkout
-      - make deps
-      - make build
-      - make test
-      - make check-format
-      - make package
+      - run: make deps
+      - run: make build
+      - run: make test
+      - run: make check-format
+      - run: make package
 
 
 workflows:
