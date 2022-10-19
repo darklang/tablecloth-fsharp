@@ -5,11 +5,12 @@ jobs:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
       - checkout
-      - run: dotnet tool install paket
-      - run: dotnet tool restore
-      - run: dotnet build
-      - run: dotnet restore
-      - run: dotnet run --project test
+      - make deps
+      - make build
+      - make test
+      - make check-format
+      - make package
+
 
 workflows:
   version: 2

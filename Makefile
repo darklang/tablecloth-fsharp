@@ -1,4 +1,8 @@
 
+deps:
+	dotnet tool restore
+	dotnet restore
+
 build:
 	dotnet build
 
@@ -6,14 +10,15 @@ watch:
 	dotnet watch msbuild
 
 format:
-	dotnet tool install fantomas
-	dotnet tool run fantomas src
+	dotnet fantomas --recurse src test
+
+check-format:
+	dotnet fantomas --recurse src test --check
 
 test:
-	dotnet restore
 	dotnet run --project test
 
 package:
 	dotnet pack -c Release
 
-.PHONY: build format test watch package
+.PHONY: deps build check-format format test watch package
