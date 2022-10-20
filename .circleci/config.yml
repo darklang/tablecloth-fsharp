@@ -1,11 +1,11 @@
 version: 2.1
 jobs:
-  fsharp-build-and-test:
+  build-and-test:
     docker:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
       - checkout
-      - cd project
+      - run: cd project
       - run: make deps
       - run: make build
       - run: make test
@@ -17,4 +17,4 @@ workflows:
   version: 2
   build:
     jobs:
-      - fsharp-build-and-test
+      - build-and-test
