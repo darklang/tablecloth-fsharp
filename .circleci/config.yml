@@ -5,6 +5,7 @@ jobs:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
       - checkout
+      - run: ls -laR
       - run: cd project
       - run: make deps
       - run: make build
