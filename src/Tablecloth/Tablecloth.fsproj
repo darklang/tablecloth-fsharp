@@ -2,18 +2,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <LangVersion>6.0</LangVersion>
     <OtherFlags>--warnaserror</OtherFlags>
     <IsPublishable>false</IsPublishable>
-    <PackageId>TableclothFSharp</PackageId>
-    <Version>0.0.8-alpha1</Version>
+    <!-- Package info for nuget -->
+    <PackageId>Tablecloth.FSharp</PackageId>
+    <PackageVersion>0.0.8-alpha1</PackageVersion>
     <Authors>Paul Biggar</Authors>
-    <Company>Darklang</Company>
-    <PackRelease>true</PackRelease>
-    <Description>F# version of Tablecloth - a standard library shim providing the same function names across many languages.</Description>
-    <PackageTags>tablecloth;fsharp;standard-library</PackageTags>
+    <Title>F# version of Tablecloth - a standard library providing the same API across many languages.</Title>
+    <Description>F# version of Tablecloth - a standard library providing the same API across many languages.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://www.tablecloth.dev</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/darklang/tablecloth-fsharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackRelease>true</PackRelease>
+    <PackageTags>tablecloth;fsharp;standard-library</PackageTags>
   </PropertyGroup>
   <ItemGroup>
     <None Include="paket.references" />
