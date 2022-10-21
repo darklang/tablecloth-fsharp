@@ -5,7 +5,7 @@ jobs:
       - image: mcr.microsoft.com/dotnet/sdk:6.0
     steps:
       - checkout
-      - run: ls -laR
+      - sudo apt update && sudo apt install make
       - run: make deps
       - run: make build
       - run: make test
