@@ -1,26 +1,24 @@
 
-build-fsharp:
-	@printf "\n\e[31mBuilding fsharp...\e[0m\n"
-	dotnet build
-	@printf "\n\e[31mBuilt!\e[0m\n"
+deps:
+	dotnet tool restore
+	dotnet restore
 
 build:
-	@$(MAKE) build-fsharp
+	dotnet build
 
-watch-fsharp:
-	@printf "\n\e[31mBuilding fsharp...\e[0m\n"
-	dotnet watch msbuild 
+watch:
+	dotnet watch msbuild
 
 format:
-	dotnet tool install fantomas
-	dotnet tool run fantomas src
+	dotnet fantomas --recurse src test
 
-test-fsharp:
-	@printf "\n\e[31mRunning tablecloth-fsharp tests ...\e[0m\n"
-	dotnet restore 
-	dotnet run --project test
-	@printf "\n\e[31mTested!\e[0m\n"
+check-format:
+	dotnet fantomas --recurse src test --check
 
 test:
-	@$(MAKE) test-fsharp
+	dotnet run --project test
 
+package:
+	dotnet pack -c Release
+
+.PHONY: deps build check-format format test watch package

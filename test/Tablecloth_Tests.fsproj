@@ -12,13 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tablecloth.fsproj" />
+    <ProjectReference Include="..\src\Tablecloth\Tablecloth.fsproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Expecto" Version="9.*" />
-    <PackageReference Include="YoloDev.Expecto.TestSdk" Version="0.*" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.*" />
-    <PackageReference Update="FSharp.Core" Version="4.*" />
+    <PackageReference Include="FSharp.Core" Version="6.*" />
   </ItemGroup>
 </Project>
