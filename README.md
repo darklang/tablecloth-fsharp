@@ -10,7 +10,9 @@ Note that F# support is newer and therefor less mature than other Tablecloth lib
 
 **Tablecloth is alpha-quality software, and is pre-1.0. Caveat emptor.**
 
-Check out the [website](https://www.tablecloth.dev) for our interactive API documentation.
+Check out the [website](https://www.tablecloth.dev) for our interactive API
+documentation, or join the community in the [Tablecloth
+Discord](https://www.tablecloth.dev/discord-invite).
 
 ## Installation
 
