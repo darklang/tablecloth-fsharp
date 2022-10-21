@@ -6,7 +6,6 @@ jobs:
     steps:
       - checkout
       - run: ls -laR
-      - run: cd project
       - run: make deps
       - run: make build
       - run: make test
